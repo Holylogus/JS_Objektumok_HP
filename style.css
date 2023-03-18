@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+div{
+    border: 1px solid black;
+    background-color: aquamarine;
+    padding: 5px;
+    font-weight: bold;
+}
+main{
+    margin: auto;
+
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+    border: 1px solid black;
+    padding: 2em;
+}
+tr{
+    padding: 1em;
+}
