@@ -34,20 +34,21 @@ function init() {
 function osszeallit() {
   //1. lépés - Összeállítjuk azt a tartalmat, ami a HTML kódot jelenti
   let txt = ""
-  txt += "<table>"
-  txt += "<thead>"
-  for (const key in KUTYA) {
-    txt += `<th>${key}</th>`
-  }
-  txt += "</thead>"
+  
   for (let index = 0; index < KUTYA.length; index++) {
-    txt += `<tr>`
+    txt += "<div><table>"
     for (const key in KUTYA[index]) {
-        txt += `<td>${KUTYA[index][key]}</td>`
+      txt += "<tr>"
+      txt += `<td>${key}</td>`
+      txt += `<td>${KUTYA[index][key]}</td>`
+  
     }
-    txt += "</tr>"
+    txt += "</table></div>"
   }
-  txt += "</table>"
+  
+  
+      
+  
   console.log(txt)
   return txt
   }
